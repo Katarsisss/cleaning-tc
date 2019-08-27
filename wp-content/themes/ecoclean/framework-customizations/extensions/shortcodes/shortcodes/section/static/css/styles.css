@@ -1,0 +1,77 @@
+/** Section Shortcode CSS **/
+.fw-main-row {
+  position: relative;
+}
+.fw-section-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Section overlap */
+.fw-section-overlap-sm,
+.fw-section-overlap-md,
+.fw-section-overlap-lg,
+.fw-section-overlap-custom {
+    overflow: hidden;
+}
+
+.fw-section-overlap-sm {
+    margin-bottom: -25px;
+}
+.fw-section-overlap-md {
+    margin-bottom: -50px;
+}
+.fw-section-overlap-lg {
+    margin-bottom: -75px;
+}
+
+@media (min-width: 768px) {
+    .fw-section-overlap-sm {
+        margin-bottom: -50px;
+    }
+    .fw-section-overlap-md {
+        margin-bottom: -100px;
+    }
+    .fw-section-overlap-lg {
+        margin-bottom: -150px;
+    }
+}
+
+/* Section background */
+.fw-main-row.background-video .fw-container,
+.fw-main-row.background-video .fw-container-fluid {
+    z-index: 1;
+}
+
+/* Parallax Styling */
+.parallax-section {
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    position: relative  !important;
+}
+
+/* Section overlay Styling */
+.section-overlay {
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: repeat !important;
+    z-index: 3;
+}
+
+
+
+@media (min-width: 1240px) {
+    .section-overlay.hide-overlay-on-large {
+	    background-color: transparent !important;
+    }
+}

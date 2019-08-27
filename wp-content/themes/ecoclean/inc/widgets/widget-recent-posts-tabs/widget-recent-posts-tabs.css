@@ -1,0 +1,194 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+
+.widget_recent_entries_tabs .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 49, 58, 0.9);
+}
+
+.widget_recent_entries_tabs ul {
+  margin: 0 -15px;
+  list-style: none;
+  padding: 0;
+}
+
+.widget_recent_entries_tabs ul li {
+  margin-bottom: 30px;
+}
+
+/**
+ * Recent posts tabs
+ */
+.widget_recent_entries_tabs .recent-posts__inner {
+  border: 1px solid #e1e1e1;
+  overflow: visible;
+  border-radius: 0 0 5px 5px;
+}
+.widget_recent_entries_tabs .recent-posts__inner > .recent-posts__media {
+  margin: -1px;
+}
+.widget_recent_entries_tabs .recent-posts__content {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 22px 30px 25px;
+}
+/* Recent posts -- Title */
+.widget_recent_entries_tabs .recent-posts__title {
+  color: #3c3c3c;
+  display: block;
+  font-size: 36px;
+  line-height:37px;
+  letter-spacing: -0.05em;
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 300;
+  overflow: hidden;
+  height: 74px;
+  margin-bottom: 6px;
+}
+.widget_recent_entries_tabs .recent-posts__title:hover {
+  color: #9DC0E3;
+}
+/* Recent posts -- Content & meta */
+.widget_recent_entries_tabs .recent-posts__content {
+  display: block;
+  overflow: hidden;
+  color: #a0a0a0;
+}
+.widget_recent_entries_tabs .recent-posts__content .excerpt {
+  display: block;
+  overflow: hidden;
+  line-height: 23px;
+  font-size: 15px;
+  height: 69px;
+  font-family: "Arial", sans-serif;
+}
+/* Recent posts -- Media */
+.widget_recent_entries_tabs .recent-posts__media {
+  display: block;
+  position: relative;
+}
+.widget_recent_entries_tabs .recent-posts__media img {
+  margin: 0;
+  float: none;
+}
+.widget_recent_entries_tabs .recent-posts__media .overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+}
+.widget_recent_entries_tabs .recent-posts__media:hover .overlay {
+  background-color: rgba(50, 50, 50, 0.5);
+}
+.widget_recent_entries_tabs .recent-posts__media .recent-posts__media .overlay:before,
+.widget_recent_entries_tabs .recent-posts__media .overlay:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  margin-left: -20px;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  opacity: 0;
+  color: #e12968;
+  font-family: 'rt-icons-2';
+}
+.widget_recent_entries_tabs .recent-posts__media:hover .overlay.audio:before,
+.widget_recent_entries_tabs .recent-posts__media:hover .overlay.video:before {
+  content: '\e696';
+}
+.widget_recent_entries_tabs .recent-posts__media:hover .overlay:before,
+.widget_recent_entries_tabs .recent-posts__media:hover .overlay:after {
+  opacity: 1;
+  color: #3c3c3c;
+}
+.widget_recent_entries_tabs .recent-posts__date {
+  color: #0082ca;
+  font-size: 11px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.widget_recent_entries_tabs .rp__meta {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  border-top: 1px solid #e1e1e1;
+}
+.widget_recent_entries_tabs .rp__meta span {
+  width: 33.3333%;
+  height: 5.5em;
+  padding-top: 1.4em;
+  color: #666666;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+}
+.widget_recent_entries_tabs .rp__meta span a {
+  color: #3c3c3c;
+}
+.widget_recent_entries_tabs .rp__meta span a:hover {
+  color: #9DC0E3;
+}
+.widget_recent_entries_tabs .rp__meta span + span {
+  border-left: 1px solid #e1e1e1;
+}
+.widget_recent_entries_tabs .rp__meta span .icon {
+  display: block;
+  color: #0082ca;
+  font-size: 1.4em;
+}
+.widget_recent_entries_tabs .rp__meta span.item-views-word,
+.widget_recent_entries_tabs .rp__meta span.item-likes-word {
+  display: none;
+}
+.widget_recent_entries_tabs .secondary .recent-posts-tabs  a.recent-posts__media {
+  width: 85px;
+  height: 85px;
+  float: left;
+}
+.widget_recent_entries_tabs .secondary .recent-posts-tabs li {
+  margin-bottom: 1.5em;
+  height: 80px;
+}
+.widget_recent_entries_tabs .secondary .recent-posts-tabs .recent-posts__title {
+  font-weight: 600;
+  font-size: 0.8em;
+  max-height: 4em;
+  overflow: hidden;
+  line-height: 2em;
+}
+.widget_recent_entries_tabs .secondary .recent-posts-tabs .recent-posts__content {
+  background: none;
+  padding: 0.5em 1em 0.5em 0;
+  text-align: left;
+}
+.widget_recent_entries_tabs .secondary .recent-posts-tabs .recent-posts__media + .recent-posts__content {
+  padding-left: 1em;
+}
+/**
+ * Responsive and widget placements
+ */
+.widget_recent_entries_tabs .widget_recent_entries img {
+  display: block !important;
+}
+/* always view img */
+.widget_recent_entries_tabs .widget_recent_entries br {
+  display: none;
+}

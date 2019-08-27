@@ -1,0 +1,59 @@
+/** Special Heading Shortcode CSS **/
+
+/* Reset */
+.fw-special-title {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+/* Heading Alignments */
+.fw-heading.fw-heading-center {
+	text-align: center;
+}
+.fw-heading.fw-heading-left {
+	text-align: left;
+}
+.fw-heading.fw-heading-right {
+	text-align: right;
+}
+
+/* Add stripes */
+.fw-heading.with_stripes {
+	overflow: hidden;
+}
+.fw-heading.with_stripes .fw-special-title,
+.fw-heading.with_stripes .fw-special-title span {
+    display: inline-block;
+    position: relative; 
+}
+.fw-heading.with_stripes .fw-special-title span.after-title,
+.fw-heading.with_stripes .fw-special-title span.before-title {
+    content: "";
+    position: absolute;
+	display: block;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: inherit;
+    top: 50%;
+    width: 600px;
+}
+.fw-heading.with_stripes .fw-special-title span.before-title {
+	right: 100%;
+	margin-right: 15px;
+}
+.fw-heading.with_stripes .fw-special-title span.after-title {
+	left: 100%;
+	margin-left: 15px;
+}
+/* Left/Right Stripe disable */
+.fw-heading.with_stripes.fw-heading-left .fw-special-title span.before-title {
+	display: none;
+}
+.fw-heading.with_stripes.fw-heading-right .fw-special-title span.after-title {
+	display: none;
+}
+
+@media (max-width: 479px) {
+	.fw-special-title {
+		font-size: 60% !important;
+	}
+}

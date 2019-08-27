@@ -1,0 +1,108 @@
+﻿/*** social icons ***/
+/**
+* http://www.socicon.com
+*/
+@font-face {
+    font-family: 'socicon';
+    src: url('socicon.eot');
+    src: url('socicon-1.eot') format('embedded-opentype'),
+    url('socicon.woff') format('woff'),
+    url('socicon.woff2') format('woff2'),
+    url('socicon.ttf') format('truetype'),
+    url('socicon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-transform: initial;
+}
+
+.social-icon:before {
+    font-family: 'socicon';
+    font-style:normal;
+}
+
+.soc-twitter:before {content: 'a'; }
+.soc-facebook:before {content: 'b'; }
+.soc-google:before {content: 'c'; }
+.soc-pinterest:before {content: 'd'; }
+.soc-foursquare:before {content: 'e'; }
+.soc-yahoo:before {content: 'f'; }
+.soc-skype:before {content: 'g'; }
+.soc-yelp:before {content: 'h'; }
+.soc-feedburner:before {content: 'i'; }
+.soc-linkedin:before {content: 'j'; }
+.soc-viadeo:before {content: 'k'; }
+.soc-xing:before {content: 'l'; }
+.soc-myspace:before {content: 'm'; }
+.soc-soundcloud:before {content: 'n'; }
+.soc-spotify:before {content: 'o'; }
+.soc-grooveshark:before {content: 'p'; }
+.soc-lastfm:before {content: 'q'; }
+.soc-youtube:before {content: 'r'; }
+.soc-vimeo:before {content: 's'; }
+.soc-dailymotion:before {content: 't'; }
+.soc-vine:before {content: 'u'; }
+.soc-flickr:before {content: 'v'; }
+.soc-500px:before {content: 'w'; }
+.soc-instagram:before {content: 'x'; }
+.soc-wordpress:before {content: 'y'; }
+.soc-tumblr:before {content: 'z'; }
+.soc-blogger:before {content: 'A'; }
+.soc-technorati:before {content: 'B'; }
+.soc-reddit:before {content: 'C'; }
+.soc-dribbble:before {content: 'D'; }
+.soc-stumbleupon:before {content: 'E'; }
+.soc-digg:before {content: 'F'; }
+.soc-envato:before {content: 'G'; }
+.soc-behance:before {content: 'H'; }
+.soc-delicious:before {content: 'I'; }
+.soc-deviantart:before {content: 'J'; }
+.soc-forrst:before {content: 'K'; }
+.soc-play:before {content: 'L'; }
+.soc-zerply:before {content: 'M'; }
+.soc-wikipedia:before {content: 'N'; }
+.soc-apple:before {content: 'O'; }
+.soc-flattr:before {content: 'P'; }
+.soc-github:before {content: 'Q'; }
+.soc-chimein:before {content: 'R'; }
+.soc-friendfeed:before {content: 'S'; }
+.soc-newsvine:before {content: 'T'; }
+.soc-identica:before {content: 'U'; }
+.soc-bebo:before {content: 'V'; }
+.soc-zynga:before {content: 'W'; }
+.soc-steam:before {content: 'X'; }
+.soc-xbox:before {content: 'Y'; }
+.soc-windows:before {content: 'Z'; }
+.soc-outlook:before {content: '1'; }
+.soc-coderwall:before {content: '2'; }
+.soc-tripadvisor:before {content: '3'; }
+.soc-appnet:before {content: '4'; }
+.soc-goodreads:before {content: '5'; }
+.soc-tripit:before {content: '6'; }
+.soc-lanyrd:before {content: '7'; }
+.soc-slideshare:before {content: '8'; }
+.soc-buffer:before {content: '9'; }
+.soc-rss:before {content: ','; }
+.soc-vkontakte:before {content: ';'; }
+.soc-disqus:before {content: ':'; }
+.soc-houzz:before {content: '+'; }
+.soc-mail:before {content: '@'; }
+.soc-patreon:before {content: '='; }
+.soc-paypal:before {content: '-'; }
+.soc-playstation:before {content: '^'; }
+.soc-smugmug:before {content: '¨'; }
+.soc-swarm:before {content: '$'; }
+.soc-triplej:before {content: '*'; }
+.soc-yammer:before {content: '&'; }
+.soc-stackoverflow:before {content: '('; }
+.soc-drupal:before {content: '#'; }
+.soc-odnoklassniki:before {content: '/'; }
+.soc-android:before {content: '_'; }
+.soc-meetup:before {content: ']'; }
+.soc-persona:before {content: ')'; }
+.soc-amazon:before {content: '£'; }
+.soc-ello:before {content: '\''; }
+.soc-mixcloud:before {content: '"'; }
+.soc-8tracks:before{content: '}'; }
+.soc-twitch:before {content: '{'; }
+.soc-airbnb:before {content: '/'; }
+.soc-pocket:before {content: '?'; }

@@ -1,0 +1,36 @@
+.fw-text-inner p {
+	color: inherit;
+	font-family: inherit;
+	font-size:  inherit;
+	font-style: inherit;
+	font-weight:  inherit;
+	line-height:  inherit;
+}
+
+/* Special Text Blocks (A/B) */
+.special-text-block-a,
+.special-text-block-b {
+	max-width: 470px;
+}
+.special-text-block-a .fw-text-inner,
+.special-text-block-b .fw-text-inner {
+	position: relative;
+}
+.special-text-block-a .fw-text-inner:before,
+.special-text-block-b .fw-text-inner:before {
+	font-family: 'Open Sans', sans-serif;
+	content: '';
+	font-size: 117px;
+	font-size: 11.7rem;
+	font-weight: 800;
+    position: absolute;
+    top: 5px;
+	left: -45px;
+	color: rgba(255,255,255, 0.2);
+}
+.special-text-block-a .fw-text-inner:before {
+	content: 'A.';
+}
+.special-text-block-b .fw-text-inner:before {
+	content: 'B.';
+}

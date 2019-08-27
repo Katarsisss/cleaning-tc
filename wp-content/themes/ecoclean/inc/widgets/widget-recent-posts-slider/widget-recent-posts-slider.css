@@ -1,0 +1,221 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* colors */
+/*social colors*/
+/* typografy */
+/* offsets */
+/* responsive */
+/* 
+ * mixins
+ */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 49, 58, 0.9);
+}
+/**
+ * Recent posts slider
+ */
+.posts-slider {
+  position: relative;
+}
+.posts-slider__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 10;
+  padding-bottom: 80px;
+}
+.posts-slider__content .more-link {
+  display: inline-block;
+  margin-top: 1em;
+  width: 60px;
+  height: 60px;
+  line-height: 30px;
+  font-size: 25px;
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: #9DC0E3;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.posts-slider__content .more-link:hover {
+  background-color: #F3AACB;
+}
+/* Recent posts slider -- Image */
+.posts-slider__image {
+  position: relative;
+  overflow: hidden;
+}
+.widget-width__container .posts-slider__image,
+.widget-width__full .posts-slider__image {
+  height: 600px;
+}
+.widget-width__container .post-thumbnail,
+.widget-width__full .post-thumbnail {
+  display: none;
+}
+.posts-slider__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.3);
+}
+.posts-slider:hover .posts-slider__overlay {
+  background-color: rgba(50, 50, 50, 0.5);
+}
+/* Recent posts slider -- Title */
+.posts-slider__title a {
+  color: #fff;
+  display: block;
+  max-width: 300px;
+  font-size: 48px;
+  font-size: 4.8rem;
+  margin: 0 auto;
+  line-height: 1em;
+}
+
+.posts-slider__autor {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 3em;
+  border-bottom: 3px solid #ffd800;
+  margin-bottom: 2em;
+}
+.posts-slider__autor:hover {
+  color: #0082ca;
+}
+/* Recent posts slider -- Meta */
+/* Recent posts slider -- next, prev */
+.posts-slider.owl-carousel .owl-controls .owl-nav .owl-next {
+  right: 0;
+}
+.posts-slider.owl-carousel .owl-controls .owl-nav .owl-prev,
+.posts-slider.owl-carousel .owl-controls .owl-nav .owl-next {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  position: absolute;
+  bottom: 60px;
+  padding: 0;
+  text-align: center;
+  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+}
+.posts-slider.owl-carousel .owl-controls .owl-nav .owl-prev:hover,
+.posts-slider.owl-carousel .owl-controls .owl-nav .owl-next:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.posts-slider.owl-carousel .owl-controls {
+  margin-top: 0;
+}
+.posts-slider.owl-carousel .owl-controls .owl-nav {
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+  position: static;
+  margin: 0 auto;
+}
+.posts-slider.owl-carousel .owl-controls .owl-dots {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding: 20px 0;
+  display: block;
+}
+
+.posts-slider.owl-carousel .owl-controls .owl-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  position: relative;
+  border: 0;
+  border-radius: 50%;
+  margin: 0 7px;
+}
+.posts-slider.owl-carousel .owl-controls .owl-dot.active {
+  background: #0082ca;
+}
+.posts-slider.owl-carousel .owl-controls .owl-dot.active:before {
+  content: "";
+  display: block;
+  position: absolute;
+  opacity: 1;
+  bottom: 8px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid #0082ca;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* Recent posts slider -- helpers classes */
+.posts-slider__table {
+  display: table !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+.posts-slider__cell {
+  display: table-cell !important;
+  vertical-align: middle !important;
+}
+/* Animate/Transition */
+.posts-slider .posts-slider__overlay,
+.posts-slider:hover .posts-slider__overlay,
+.posts-slider.owl-carousel .owl-controls .owl-nav .owl-prev,
+.posts-slider.owl-carousel .owl-controls .owl-nav .owl-next,
+.posts-slider.owl-carousel .owl-controls .owl-nav .owl-prev:hover,
+.posts-slider.owl-carousel .owl-controls .owl-nav .owl-next:hover,
+.transition--on {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* Disable: Animate/Transition */
+.transition--off {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+/**
+ * Responsive and widget placements
+ */
+@media screen and (min-width: 768px) {
+  .posts-slider.owl-carousel .owl-controls .owl-nav {
+    width: 130px;
+    position: relative;
+  }
+  .posts-slider__title a {
+    width: 80%;
+    max-width: 700px;
+  }
+}
+
+/*# sourceMappingURL=widget-recent-posts-slider.css.map */

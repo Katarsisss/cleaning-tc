@@ -1,0 +1,165 @@
+/**
+ * Banner post
+ */
+
+.banner-post__row { /* .widget_banner_posts > .row */
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.banner-post__3,
+.banner-post__2,
+.banner-post__1 { /* .widget_banner_posts div[class*="col-"] */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.banner-post {
+    height: 330px;
+}
+
+/* Banner post -- Overlay */
+.banner-post .overlay {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner-post .overlay:before,
+.banner-post .overlay:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.banner-post .overlay:before {
+}
+
+.banner-post__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.banner-post__content {
+    position: relative;
+    padding: 0 45px 28px 45px;
+}
+
+/* Banner post -- Category */
+.banner-post__category {
+    display: inline-block;
+}
+
+.banner-post__category a {
+    display: inline-block;
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 4px 16px;
+    margin-bottom: 13px;
+}
+
+/* Banner post -- Title */
+.banner-post__title {
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.1111;
+    letter-spacing: 0;
+}
+
+/* Banner post -- Date */
+.banner-post__date {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* Blocks for content vertical align */
+.banner-post__table {
+    text-align: center;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-post__cell {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    vertical-align: bottom;
+    line-height: 0; /* need to remove unnecessary spaces inline-block's */
+}
+
+/* Font family */
+.banner-post__category,
+.banner-post__title,
+.banner-post__date,
+.font-family--roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Animate/Transition */
+.banner-post .overlay,
+.banner-post:hover .overlay,
+.transition--on {
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+/* Disable: Animate/Transition */
+.transition--off {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+/**
+ * Responsive and widget placements
+ */
+
+/* Make banners in one column */
+.widget-width__side .banner-post__row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.widget-width__side .banner-post__3,
+.widget-width__side .banner-post__2,
+.widget-width__side .banner-post__1 {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.widget-width__side .banner-post__3 + .banner-post__3,
+.widget-width__side .banner-post__2 + .banner-post__2 {
+    margin-top: 10px;
+}
+
+/* If one banner make it wide */
+.widget-width__loop .banner-post__1 {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 0;
+    width: 100%;
+}

@@ -1,0 +1,118 @@
+/* Icon Box / Services */
+
+.fw-iconbox {
+	padding: 15px 0;
+}
+
+.fw-iconbox.border-bottom {
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.fw-iconbox .fw-iconbox-title {
+	margin: 0;
+}
+.fw-iconbox .fw-iconbox-text {
+	padding: 0;
+}
+.fw-iconbox .fw-iconbox-text a,
+.fw-iconbox .fw-iconbox-title a {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+	color: inherit;
+}
+
+.fw-iconbox .fw-iconbox-inner {
+	display: table;
+	position: relative;
+	padding: 0 35px;
+}
+.fw-iconbox .fw-iconbox-image {
+	margin-top: 0;
+	display: table-cell;
+	vertical-align: middle;
+	padding-top: 0;
+	padding-right: 20px;
+}
+.fw-iconbox .fw-iconbox-image img {
+	min-height: 34px;
+	min-width: 34px;
+	width: auto;
+	display: block;
+}
+.fw-iconbox .readmore-wrap,
+.fw-iconbox .fw-iconbox-aside {
+	padding-left: 15px;
+	display: table-cell;
+	padding-top: 0;
+	vertical-align: middle;
+}
+.fw-iconbox .read-more {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+	position: relative;
+	width: 38px;
+	height: 38px;
+	font-size: 16px;
+	line-height: 36px;
+	text-align: center;
+	color: #a0a0a0;
+	border-radius: 50%;
+	border: 1px solid rgba(225, 225, 225, 0.5);
+}
+
+.fw-iconbox .read-more:hover {
+	color: #3c3c3c;
+	border-color: transparent;
+	background-color: rgba(225, 225, 225, 0.5);
+}
+.fw-iconbox .read-more i {
+	margin-left: 2px;
+}
+
+/* Stipes custom class */
+.fw-iconbox.use-stripes {
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.fw-iconbox.use-stripes-2 {
+	border-left: 1px solid #e1e1e1;
+	border-right: 1px solid #e1e1e1;
+}
+/* Responsive fixes */
+@media (max-width: 991px) {
+	.fw-iconbox.use-stripes {
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		border-left: 0;
+		border-right: 0;
+		padding: 12px 0 18px;
+	}
+
+	/* Additional styles */
+	.fw-iconbox.left-align-sm .fw-iconbox-inner {
+		float: left !important;
+		margin-left: 35px !important;
+	}
+}
+
+.fw-iconbox-image .icon:before,
+.fw-iconbox-image .icon:after {
+	font-size: inherit;
+}
+
+/* Icon box block alignment */
+.fw-iconbox.fw-content-align-left .fw-iconbox-inner {
+	float: left;
+}
+.fw-iconbox.fw-content-align-right .fw-iconbox-inner {
+	float: right;
+}
+.fw-iconbox.fw-content-align-center .fw-iconbox-inner {
+	margin: 0 auto;
+	float: none;
+}

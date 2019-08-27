@@ -1,0 +1,69 @@
+/* Button Shortcode CSS */
+/* -------------------------------------------------- */
+
+/** Button Alignment **/
+.fw-button-block {
+    width: 100%;
+}
+.fw-button-block.fw-button-left {
+    text-align: left;
+}
+.fw-button-block.fw-button-right {
+    text-align: right;
+}
+.fw-button-block.fw-button-center {
+    text-align: center;
+}
+
+.fw-btn {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.fw-btn,
+.fw-btn span {
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    transition: all ease .3s;
+}
+
+/*** Button Types ***/
+
+/* Button Type 1 */
+.fw-btn.fw-btn-1 {
+    display: inline-block;
+    text-align: center;
+    padding: 12px 30px 13px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    line-height: 1;
+}
+.fw-btn.fw-btn-1 span {
+    top: 0;
+    font-size: 11px;
+    font-weight: 700;
+    vertical-align: middle;
+    text-transform: uppercase;
+    position: relative;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;
+}
+
+/* Button Type 2 */
+.fw-btn.fw-btn-2 {
+    background-color: transparent !important;
+}
+
+/* Button Type 3 */
+.fw-btn.fw-btn-3 {
+    background-color: transparent !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
