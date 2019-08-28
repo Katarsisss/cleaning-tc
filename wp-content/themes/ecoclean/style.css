@@ -7545,3 +7545,8 @@ img.emoji {
 .fw-iconbox-title-2{
     font-weight: 700 !important;
 }
+
+.readmore-wrap  {
+    position: absolute;
+    left: 280px;
+}
