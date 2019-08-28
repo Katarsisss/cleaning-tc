@@ -7541,3 +7541,7 @@ img.emoji {
   margin-bottom: 0;
   visibility: visible;
 }
+
+.fw-iconbox-title-2{
+    font-weight: 700 !important;
+}
