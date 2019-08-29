@@ -1491,7 +1491,7 @@ html[xmlns] .slides {
     width: auto;
     position: absolute;
     bottom: 40px;
-    left: 57%;
+    /*left: 57%;*/
     text-align: center;
     z-index: 10;
 }
