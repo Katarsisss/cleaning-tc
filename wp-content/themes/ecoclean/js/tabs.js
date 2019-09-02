@@ -1,15 +1,29 @@
 jQuery(document).ready(function($) {
-  $('.tabs-nav a').click(function() {
 
-    //Check if the tabs menu has active class
-    $('.tabs-nav li').removeClass('active');
-    $(this).parent().addClass('active');
-
-    // Display active tab
-    var currentTab = $(this).attr('href');
-    $('.tabs-content div').hide();
-    $(currentTab).show();
-
-    return false;
+var listItemHeight = $(".naccs ul")
+            .find("li:eq(" + numberIndex + ")")
+            .innerHeight();
+        $(".naccs ul").height(listItemHeight + "px");
   });
+
+
+
+
+
+    jQuery(document).on("click", ".naccs .menu div", function() {
+    var numberIndex = $(this).index();
+
+    if (!$(this).is("active")) {
+        $(".naccs .menu div").removeClass("active");
+        $(".naccs ul li").removeClass("active");
+
+        $(this).addClass("active");
+        $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+        var listItemHeight = $(".naccs ul")
+            .find("li:eq(" + numberIndex + ")")
+            .innerHeight();
+        $(".naccs ul").height(listItemHeight + "px");
+    }
 });
+
