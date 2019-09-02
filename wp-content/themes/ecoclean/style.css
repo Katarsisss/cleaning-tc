@@ -6599,6 +6599,18 @@ p > video {
     font-size: 0;
 }
 
+.social-icons li .facebook-a:hover{
+    background-color: #4267b2;
+}
+
+.social-icons li .instagram-a:hover{
+     background:  #C13584;
+}
+
+.social-icons li .youtube-a:hover{
+     background:  #c4302b;
+}
+
 .social-icons li {
     display: inline-block;
     vertical-align: top;
