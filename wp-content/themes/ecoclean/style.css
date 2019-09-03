@@ -6418,7 +6418,7 @@ p > video {
 .equipment img {
     margin: 30px 4px 15px 4px;
     display: inline-block;
-     height: 40px;
+     height: 35px;
      padding-left: 15px;
 }
 
@@ -6661,7 +6661,7 @@ p > video {
 
 #footer .info i {
     font-size: 14px;
-    margin: 5px 7px 0 0;
+    margin: 2px 7px 0 0;
     color: #969ba5;
     vertical-align: middle;
     float: left;
@@ -7898,4 +7898,16 @@ ul.nacc li p {
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+.fa-map-marker {
+    margin-bottom: 40px !important;
+}
+
+.fa-phone{
+    margin-bottom: 10px !important;
+}
+
+.tooltip-inner {
+    text-align: left;
 }
