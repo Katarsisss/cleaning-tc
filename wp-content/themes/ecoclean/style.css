@@ -7908,6 +7908,16 @@ ul.nacc li p {
     margin-bottom: 10px !important;
 }
 
-.tooltip-inner {
-    text-align: left;
+/*.fw-iconbox-inner{
+    position: relative;
 }
+*/
+.tooltip-inner {
+    /*position: absolute;
+    top: 70px;*/
+    text-align: left;
+    width: 700px;
+    z-index: 999;
+    
+}
+
