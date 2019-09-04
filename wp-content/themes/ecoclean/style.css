@@ -7918,6 +7918,26 @@ ul.nacc li p {
     text-align: left;
     width: 700px;
     z-index: 999;
-    
 }
 
+.naccs .detergent{
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    text-align: center;
+    font-weight: bold;
+    color: #6b6b6b;
+}
+
+.naccs .detergent a{
+    text-align: center;
+    font-weight: bold;
+    color: #6b6b6b;
+}
+
+.naccs p{
+    padding-bottom: 7px;
+}
+
+ul.nacc{
+   height: 719.641px;
+}
