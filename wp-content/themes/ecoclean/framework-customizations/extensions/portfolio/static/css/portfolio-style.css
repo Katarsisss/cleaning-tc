@@ -84,7 +84,7 @@ section.portfolio {
 }
 
 .single-fw-portfolio .entry-category a {
-    color: #ffd800;
+    color: #0082ca;
 }
 
 .single-fw-portfolio .entry-category a:hover {
@@ -314,13 +314,13 @@ ul.portfolio-categories li a {
 }
 
 ul.portfolio-categories li:first-child a {
-    border: 1px solid #ffd800;
-    background: #ffd800;
+    border: 1px solid #0082ca;
+    background: #0082ca;
     color: #ffffff;
 }
 ul.portfolio-categories li a:hover {
-    border: 1px solid #ffd800;
-    background: #ffd800;
+    border: 1px solid #0082ca;
+    background: #0082ca;
     color: #ffffff;
 }
 .portfolio-img .portfolio-hover {
@@ -468,7 +468,7 @@ ul.portfolio-categories li a:hover {
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
-    color: #ffd800;
+    color: #0082ca;
 }
 
 .portfolio-fullwidth .portfolio-info-block .entry-category a:hover,
