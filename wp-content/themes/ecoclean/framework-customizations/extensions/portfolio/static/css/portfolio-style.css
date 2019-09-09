@@ -53,6 +53,12 @@ section.portfolio {
     width: 33.3333%;
 }
 
+.portfolio-list-2 .portfolio-item-2 {
+    display: block;
+    float: left;
+    margin: 0 0 0 0;
+}
+
 .div--table {
     display: table !important;
     height: 100% !important;

@@ -5886,7 +5886,7 @@ p > video {
     .single .site-content,
     .blog .site-content,
     .archive .site-content {
-        padding: 120px 0;
+        padding: 60px 0;
     }
     /* Header */
     .header__primary .header-center {
@@ -7959,4 +7959,10 @@ background-size: contain;
     background-repeat: no-repeat; 
     background-position: center center; 
     background-size: contain;
+}
+
+
+
+.education-tab{
+    padding-bottom: 20px;
 }
