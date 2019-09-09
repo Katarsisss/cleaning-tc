@@ -29,7 +29,7 @@
 .fw-iconbox .fw-iconbox-inner {
 	display: table;
 	position: relative;
-	padding: 0 35px;
+	/*padding: 0 35px;*/
 }
 .fw-iconbox .fw-iconbox-image {
 	margin-top: 0;
