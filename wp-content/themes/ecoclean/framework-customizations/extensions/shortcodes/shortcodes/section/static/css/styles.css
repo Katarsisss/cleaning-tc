@@ -103,7 +103,7 @@
 .fw-iconbox .fw-iconbox-inner {
     display: table;
     position: relative;
-    /*padding: 0 35px;*/
+    padding: 0 35px;
 }
 .fw-iconbox .fw-iconbox-image {
     margin-top: 0;
@@ -111,7 +111,7 @@
     /*vertical-align: middle;*/
     padding-top: 0;
     /*padding-right: 20px;*/
-    width: 69px;
+    width: 34px;
 }
 .fw-iconbox .fw-iconbox-image img {
     min-height: 34px;
@@ -448,6 +448,7 @@
 .fw-iconbox.fw-content-align-center .fw-iconbox-inner {
     margin: 0 auto;
     float: none;
+    width: 100%;
 }
 
 .fw-testimonials{
