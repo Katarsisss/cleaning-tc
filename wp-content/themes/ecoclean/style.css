@@ -8183,3 +8183,7 @@ background-size: contain;
 .naccs-top{
     margin-top: 40px !important;
 }
+
+.indent-p p{
+    padding-left: 20px;
+}
